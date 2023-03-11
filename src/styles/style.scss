@@ -1,0 +1,169 @@
+$basicColor: #fbfcfc;
+$darkGrey: #909497;
+$darkBlue: #1b2631;
+$basicDark: #1d1d1d;
+$blackMedium: #202124;
+$greyLight: #d7dbdd;
+
+.span-animated {
+  color: $basicDark;
+  font-size: 40px;
+}
+
+// css general
+.margin-side {
+  margin: 0 3em;
+}
+
+.text-black {
+  color: $basicDark;
+}
+.text-white {
+  color: $basicColor;
+}
+.title-section {
+  color: $basicColor;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.display-flex-around {
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  align-items: flex-start;
+}
+.title-white {
+  color: $basicColor;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+//component home
+
+#home-container {
+  padding: 3em 3em;
+  width: 100%;
+  color: $basicDark;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  margin: 2em 0;
+  background-color: #909497;
+
+  & > div > div {
+    margin-top: 1rem;
+  }
+}
+
+//component resume
+
+#container-resume {
+  margin-top: 1em;
+  padding: 1em 0;
+
+  & .content-resume {
+    display: flex;
+    direction: column;
+    gap: 4em;
+
+    & > div {
+      width: 60%;
+    }
+  }
+}
+
+//componente label
+
+.label {
+  color: grey;
+  font-size: 1rem;
+  font-style: oblique;
+
+  &--dark {
+    color: #bdc3c7;
+    font-size: 1rem;
+    font-style: oblique;
+  }
+}
+
+.label-center {
+  color: grey;
+  font-size: 1rem;
+  font-style: oblique;
+  text-align: center;
+}
+
+//component box
+
+.box-container {
+  box-shadow: 2px 2px 2px transparent;
+  border: 1px solid;
+  padding: 1em;
+}
+
+// cards
+.card-container {
+  background-color: $basicColor;
+  border: 1px solid $darkGrey;
+  border-radius: 15px;
+  box-shadow: 2px -2px 0px 0px rgba(240, 243, 244);
+  color: $basicDark;
+  height: auto;
+  padding: 8px;
+  display: flex;
+  gap: 11px;
+  min-width: 120px;
+  max-width: 148px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logos-card {
+  height: 60px;
+  width: 30px;
+}
+
+// component skills
+
+.block-skills {
+  width: 50%;
+  float: right;
+
+  & > h3 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  & .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+
+// page experience
+.experience-container {
+}
+
+// page contact
+
+.contact-container {
+  margin-top: 1em;
+  padding: 2em;
+  background-color: $darkGrey;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & input {
+    background-color: $basicDark;
+    border: 3px solid #bdc3c7;
+    border-radius: 4px;
+  }
+}
