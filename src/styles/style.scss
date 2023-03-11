@@ -5,6 +5,12 @@ $basicDark: #1d1d1d;
 $blackMedium: #202124;
 $greyLight: #d7dbdd;
 
+p {
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .span-animated {
   color: $basicDark;
   font-size: 40px;
@@ -156,14 +162,49 @@ $greyLight: #d7dbdd;
   margin-top: 1em;
   padding: 2em;
   background-color: $darkGrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & h2 {
     text-align: center;
   }
+}
+.form-input {
+  position: relative;
+  display: block;
+  margin: 2em 0;
 
   & input {
-    background-color: $basicDark;
-    border: 3px solid #bdc3c7;
+    background-color: $basicColor;
+    border: 2px solid $basicDark;
     border-radius: 4px;
+    height: 2em;
+    min-width: 300px;
+    max-width: 600px;
   }
+  & label {
+    display: none;
+  }
+
+  & :focus ~ label {
+    position: absolute;
+    top: -11px;
+    left: 3px;
+    z-index: 1;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items: baseline;
+
+    margin: 0 10px;
+  }
+
+  & :focus {
+    outline: none;
+  }
+}
+input:focus::placeholder {
+  color: transparent;
 }
