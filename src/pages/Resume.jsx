@@ -1,20 +1,18 @@
 import Label from "../components/Label";
-import Experience from "./Experience";
 import Skills from "./Skills";
 
 const Resume = (props) => {
   return (
     <div id="container-resume">
-      <div className="margin-side">
-        <div style={{marginBottom:'2em'}}>
+      <div>
+        <div className="about">
           <Label
             labelStart={"<h2>"}
             labelEnd={"</h2>"}
-            children={<h2 className="title-section">Resume</h2>}
+            children={<h2 className="title-section">About me</h2>}
           />
-        </div>
+        
         <div className="content-resume text-white">
-          <div>
           <div>
             <Label
               labelStart={"<p>"}
@@ -28,19 +26,18 @@ const Resume = (props) => {
                 </p>
               }
             />
-            <div style={{marginTop:'2em'}}>
-            <Label labelEnd={'</section>'} labelStart={'<section>'} children={<Experience/>}/>
             </div>
             </div>
-          </div>
-          <div>
+            </div>
+            <div>
             <div>
               <Skills />
             </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
+          </div>
+    
+     
   );
 };
 

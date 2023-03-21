@@ -1,4 +1,5 @@
 import React from "react";
+import SwitchTheme from "./Switch";
 
 const Header = () => {
   return (
@@ -15,6 +16,9 @@ const Header = () => {
         </li>
         <li>Works</li>
         <li>Contact</li>
+        <li>
+        <SwitchTheme />
+        </li>
       </ul>
     </nav>
   );

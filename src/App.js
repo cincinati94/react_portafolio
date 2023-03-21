@@ -1,34 +1,27 @@
-
-import './App.scss';
-import Header from './components/Header';
+import "./App.scss";
+import Header from "./components/Header";
 // import { BrowserRouter as Router, Outlet, Route,Routes } from "react-router-dom";
-import  Home from './pages/Home';
-import { Fragment } from 'react';
-import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+import Home from "./pages/Home";
+import { Fragment, useContext } from "react";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import { ThemeContext } from "./ThemeContext";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <Fragment>
-      {/* <Router>
-        <Header/>
-        <Routes>
-          <Route exact path="/" element = {<Home/>} />
-          <Route path='/resume' element ={<Resume/>}/>
-          </Routes>
-      </Router> */}
       <header>
-      <Header/>
+        <Header />
       </header>
-      <Home/>
-      <Resume/>
-      <Contact/>  
-       </Fragment>
-    );
-  }
-  
-  // function NotFound() {
-  //   return <p>Ha llegado a una página que no existe</p>;
-  // }
+      <div className={theme}>
+        <Home />
+        <Resume />
+        <Contact />
+      </div>
+    </Fragment>
+  );
+}
 
 export default App;
