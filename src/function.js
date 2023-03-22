@@ -24,4 +24,7 @@ export function colorText() {
       text.appendChild(span);
     });
   }
+
+
+  
    

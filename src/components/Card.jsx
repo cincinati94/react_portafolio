@@ -2,10 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Card = (props) => {
+   
   return (
   <div className="card-container">
-   <div>{props.logo && props.logo}</div>
-    <div>{props.name}</div>
+  <div className="card">
+   <div className="logo-card">{props.logo && props.logo}</div>
+  </div>
+  <div id="hidden-name">{props.name}</div>
   </div>
   );
   }

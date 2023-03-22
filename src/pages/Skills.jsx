@@ -11,6 +11,17 @@ const cardsFrontEnd = [
   { name: "SASS", logo: <Logo icon={"vscode-icons:file-type-sass"} /> },
   { name: "BEM", logo: <Logo icon={"logos:bem"} /> },
 ];
+const cardsBackEnd = [
+  { name: "MongoDB", logo: <Logo icon={"logos:mongodb"} /> },
+  { name: "Node", logo: <Logo icon={"fa-brands:node"} color={"green"} /> },
+  { name: "express", logo: <Logo icon={"logos:express"} /> },
+];
+const cardsMiscellaneous = [
+  { name: "Git", logo: <Logo icon={"icon-park:github-one"} /> },
+  { name: "GitHub", logo: <Logo icon={"ri:git-merge-fill"} color={"green"} /> },
+  { name: "npm", logo: <Logo icon={"logos:npm"} /> },
+];
+
 const Skills = () => {
   return (
     <div className="block-skills">
@@ -23,8 +34,21 @@ const Skills = () => {
         ))}
         </div>
       </div>
-      <div>
-        <h4></h4>
+      <div className="skills-container" >
+        <h4>Back-end</h4>
+        <div>
+        {cardsBackEnd.map((card, index) => (
+          <Card name={card.name} logo={card.logo} key={index} />
+        ))}
+        </div>
+      </div>
+      <div className="skills-container" >
+        <h4>Miscellaneous</h4>
+        <div>
+        {cardsMiscellaneous.map((card, index) => (
+          <Card name={card.name} logo={card.logo} key={index} />
+        ))}
+        </div>
       </div>
     </div>
   );

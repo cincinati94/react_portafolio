@@ -1,9 +1,9 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-const Logo = ({icon,color}) => {
+const Logo = ({icon,color,height,width}) => {
   
-  return <Icon icon={icon} height={30} width={30} color={color} />; 
+  return <Icon icon={icon} height={height} width={width} color={color} />; 
 
  };  
 
