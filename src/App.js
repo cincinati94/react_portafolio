@@ -6,6 +6,7 @@ import { Fragment, useContext } from "react";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import { ThemeContext } from "./ThemeContext";
+import Works from "./pages/Works";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -18,6 +19,7 @@ function App() {
       <div className={theme}>
         <Home />
         <Resume />
+        <Works/>
         <Contact />
       </div>
     </Fragment>

@@ -47,6 +47,12 @@ $greyLight: #d7dbdd;
   #hidden-name {
     color: white;
   }
+  .skills-container > h4 {
+    color: white;
+  } 
+  .block-skills > h3 {
+    color: $basicColor;
+  }
 }
 
 p {
@@ -62,18 +68,9 @@ p {
 
 // css general
 
-.text-black {
-  color: $basicDark;
-}
-.text-white {
-  color: $basicColor;
-}
+
 .title-section {
   color: $basicColor;
-}
-
-.align-center {
-  text-align: center;
 }
 .title-white {
   color: $basicColor;
@@ -166,7 +163,7 @@ a {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: max-content;
+    width: auto;
     gap: 3em;
   }
   & .content-resume {
@@ -215,10 +212,10 @@ a {
   border: 1px solid $darkGrey;
   border-radius: 15px;
   color: $basicDark;
-  height: 100%;
+  height: 100px;
   padding: 8px;
   gap: 11px;
-  width: 7.1vw;
+  width: 100px;
 
 }
 
@@ -230,6 +227,7 @@ a {
 #hidden-name {
   visibility: hidden;
   font-weight: 500;
+  padding: 10px 0;
 }
 .card {
   display: flex;
@@ -241,8 +239,9 @@ a {
     visibility: visible;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    transition: all 400ms;
+    margin: 10px 0;
+    height: 0;
+    transition: height all 400ms;
   }
   & .logo-card > svg {
     height: auto;
@@ -261,20 +260,22 @@ a {
     margin-bottom: 2em;
   }
   & .skills-container {
-    display: flex;
-    flex-direction: column;
+   
     & > div {
       display: flex;
       gap: 2em;
       justify-content: flex-start;
-      margin-bottom: 60px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
     }
   }
 }
 
-// page experience
-.text-orange {
-  color: orange;
+
+// works
+
+.container-works{
+  background-color: #77726e;
 }
 
 // page contact
