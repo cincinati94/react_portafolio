@@ -53,6 +53,12 @@ $greyLight: #d7dbdd;
   .block-skills > h3 {
     color: $basicColor;
   }
+  .about  p {
+    color: $basicColor;
+  }
+  .container-works{
+    color: white;
+  }
 }
 
 p {
@@ -275,8 +281,11 @@ a {
 // works
 
 .container-works{
-  background-color: #77726e;
+  background-color: #000;
+  display: flex;
+  padding: 2em 3em;
 }
+
 
 // page contact
 
@@ -294,5 +303,6 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-bottom: 1em;
   }
 }
