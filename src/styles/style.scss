@@ -49,14 +49,14 @@ $greyLight: #d7dbdd;
   }
   .skills-container > h4 {
     color: white;
-  } 
+  }
   .block-skills > h3 {
     color: $basicColor;
   }
-  .about  p {
+  .about p {
     color: $basicColor;
   }
-  .container-works{
+  .container-works {
     color: white;
   }
 }
@@ -73,7 +73,6 @@ p {
 }
 
 // css general
-
 
 .title-section {
   color: $basicColor;
@@ -154,6 +153,11 @@ a {
     margin-top: 1rem;
   }
 }
+.img-home-container{
+  mix-blend-mode: lighten;
+  height: auto;
+  width: 50%;
+}
 
 //component resume
 
@@ -222,7 +226,6 @@ a {
   padding: 8px;
   gap: 11px;
   width: 100px;
-
 }
 
 .logos-card {
@@ -251,7 +254,7 @@ a {
   }
   & .logo-card > svg {
     height: auto;
-    width: 75px
+    width: 75px;
   }
 }
 
@@ -266,7 +269,6 @@ a {
     margin-bottom: 2em;
   }
   & .skills-container {
-   
     & > div {
       display: flex;
       gap: 2em;
@@ -277,15 +279,13 @@ a {
   }
 }
 
-
 // works
 
-.container-works{
+.container-works {
   background-color: #000;
   display: flex;
   padding: 2em 3em;
 }
-
 
 // page contact
 
@@ -304,5 +304,45 @@ a {
     align-items: center;
     gap: 10px;
     padding-bottom: 1em;
+  }
+}
+
+//works
+
+.container-work-card > img {
+  height: 200px;
+  width: 250px;
+}
+.container-works-list {
+  display: flex;
+  height: 300px;
+  gap: 3em;
+}
+.container-links {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  justify-content: center;
+  & a {
+    border: 2px solid white;
+    padding: 1em;
+
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+.container-work-card:hover {
+  .container-links {
+    background: $darkGrey;
+    height: 90px;
+    visibility: visible;
+    position: relative;
+    top: -50%;
+    margin: 1em;
   }
 }
