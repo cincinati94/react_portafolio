@@ -15,7 +15,7 @@ const Header = () => {
           <a href="#container-resume">Resume</a>
         </li>
         <li>Works</li>
-        <li>Contact</li>
+        <li><a href='#contact-container'>Contact</a></li>
         <li>
         <SwitchTheme />
         </li>

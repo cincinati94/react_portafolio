@@ -34,6 +34,10 @@ const Home = () => {
           />
         </div>
       </div>
+      <img src="code.jpg" alt="code" className='img-home-container'/>
+      <div>
+      
+      </div>
     </div>
   
   );
